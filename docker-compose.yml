@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: mini-mes-postgres
+    environment:
+      POSTGRES_DB: minimes
+      POSTGRES_USER: minimes
+      POSTGRES_PASSWORD: minimes
+      TZ: Asia/Seoul
+    ports:
+      - "5432:5432"
+    volumes:
+      - mini-mes-pgdata:/var/lib/postgresql/data
+
+volumes:
+  mini-mes-pgdata:

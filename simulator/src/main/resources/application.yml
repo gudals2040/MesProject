@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: mini-mes-simulator
+  main:
+    web-application-type: none   # 웹 서버 없이 스케줄러만 동작
+
+simulator:
+  server-url: http://localhost:8080

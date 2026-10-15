@@ -1,0 +1,5 @@
+rootProject.name = 'mini-mes'
+
+include 'common'
+include 'simulator'
+include 'mes-server'

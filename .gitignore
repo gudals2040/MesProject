@@ -1,0 +1,21 @@
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+out/
+
+### IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+### VS Code
+.vscode/
+
+### OS
+.DS_Store
+Thumbs.db
+
+### Local env
+.env
+*.log

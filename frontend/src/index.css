@@ -1,0 +1,38 @@
+/* 와이어프레임 색 기준. 디자인은 화면 구현 단계에서 정한다 */
+:root {
+  --ink: #1c1c1a;
+  --muted: #55554f;
+  --line: #8e8e89;
+  --bg: #f4f4f2;
+  --surface: #ffffff;
+  font-family: 'Pretendard', 'Noto Sans KR', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: var(--bg); }
+a { color: inherit; }
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 56px;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--line);
+}
+.app-header--admin { background: var(--surface); color: var(--ink); }
+.app-header--worker { background: var(--ink); color: #fff; }
+.app-header__brand { font-weight: 700; }
+.app-header__role { font-size: 12px; padding: 2px 8px; border: 1px solid currentColor; border-radius: 999px; }
+.app-header__nav { display: flex; gap: 4px; }
+.app-header__nav a { padding: 6px 12px; border-radius: 6px; text-decoration: none; }
+.app-header--admin .app-header__nav a.active { background: var(--ink); color: #fff; }
+.app-header--worker .app-header__nav a.active { background: #fff; color: var(--ink); }
+
+.page { padding: 24px; }
+.screen-id { margin: 0; font-family: ui-monospace, monospace; color: var(--muted); }
+.muted { color: var(--muted); }
+.home__links { display: flex; gap: 12px; }
+.home__links a { padding: 12px 20px; border: 1.5px solid var(--ink); border-radius: 8px; background: var(--surface); text-decoration: none; font-weight: 700; }

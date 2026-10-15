@@ -1,0 +1,5 @@
+// 시뮬레이터와 MES 서버가 함께 쓰는 코드 (메시지 형식, 공용 enum)
+// Spring에 의존하지 않는 순수 Java 모듈
+plugins {
+    id 'java-library'
+}
