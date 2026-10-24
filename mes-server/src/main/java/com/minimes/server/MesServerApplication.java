@@ -10,4 +10,3 @@ public class MesServerApplication {
         SpringApplication.run(MesServerApplication.class, args);
     }
 }
-12
