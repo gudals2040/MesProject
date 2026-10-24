@@ -6,7 +6,7 @@ plugins {
 dependencies {
     implementation project(':common')
     implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'org.springframework:spring-web'   // RestClient (2단계에서 사용)
+    implementation 'org.springframework.boot:spring-boot-starter-restclient'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
